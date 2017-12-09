@@ -1,0 +1,1 @@
+Hello <?php echo htmlspecialchars($_POST['firstname']); ?>, thank you for contacing me. I'll do my best to answer you ASAP.

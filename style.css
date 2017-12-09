@@ -1,0 +1,257 @@
+
+h1 {
+    text-align: center;
+    color: #424242;
+    padding-top: 60px;
+}
+
+#nav{
+    background: #424242;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    transition: padding-top .3s,padding-bottom .3s;
+    transition-property: padding-top, padding-bottom;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: initial, initial;
+    transition-delay: initial, initial;
+}
+body{
+    font-size: 16pt;
+}
+#nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+#nav .navbar-brand {
+    font-size: 1.1em;
+    color: white;
+}
+#nav .navbar-nav {
+    letter-spacing: 1px; 
+}
+#nav .nav > li > a {
+    color: white;
+    border-color: #424242;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#nav .nav > li > a:hover {
+    border-color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#nav .nav > .active > a
+{
+    background:white;
+    color: #424242;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+@media (min-width: 992px) {
+    #nav{
+        padding-bottom: 25px;
+        -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+        -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+        transition: padding-top 0.3s, padding-bottom 0.3s; 
+    }
+    #nav .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s; 
+    }
+    #nav.navbar-shrink {
+        padding-top: 10px;
+        padding-bottom: 10px; 
+    }
+    #nav.navbar-shrink .navbar-brand {
+        font-size: 1.5em; 
+    } 
+}
+header.masthead {
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    background: #3299BB;
+}
+header.masthead img {
+    display: block;
+    margin: 0 auto 20px; 
+}
+header.masthead .intro-text .name {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    display: block; 
+}
+header.masthead .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300; 
+}
+@media (min-width: 768px) {
+    header.masthead {
+        padding-top: 200px;
+        padding-bottom: 100px; }
+        header.masthead .intro-text .name {
+        font-size: 4.75em; }
+        header.masthead .intro-text .skills {
+        font-size: 1.75em; 
+    } 
+}
+hr.star-light,
+hr.star-primary {
+  max-width: 250px;
+  margin: 25px auto 30px;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 5px; 
+}
+
+hr.star-light:after,
+hr.star-primary:after {
+  font-family: FontAwesome;
+  font-size: 2em;
+  position: relative;
+  top: -.8em;
+  display: inline-block;
+  padding: 0 0.25em;
+  content: '\f005'; }
+
+hr.star-light {
+  border-color: white; }
+
+hr.star-light:after {
+  color: white;
+  background-color: #3299BB; }
+
+hr.star-primary {
+  border-color: #2C3E50; }
+
+hr.star-primary:after {
+  color: #2C3E50;
+  background-color: white; }
+
+.img-centered {
+  margin: 0 auto; }
+
+#widDescription {
+    padding-top: 50px;
+}
+
+#wrapper{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -100px; 
+}
+.push{
+    height: 100px;
+}
+#siteFooter {
+    background: #3299BB;
+    position: relative;
+    display: block;
+    margin-top:50px; 
+    height:100px;
+    border-top-left-radius:100%;
+    border-top-right-radius:100%;
+}
+#siteFooter-content{
+    color: white;
+    position: absolute;
+    width: 100%;
+    text-align: center;    
+    bottom:5pt;
+}
+
+/**** FORM ****/
+input[type=text], input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select:focus,
+textarea {
+  font-size: 16pt;
+}
+input[type=submit] {
+    background-color: #3299BB;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3299BB;
+}
+
+.formContainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: green; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    visibility: hidden;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+#canvas{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width :"400" ;
+    height : "400"; 
+}
+
+#canvasContainer{
+    width: 100%;
+}
